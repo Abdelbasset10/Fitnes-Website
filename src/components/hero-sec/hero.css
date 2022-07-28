@@ -1,0 +1,338 @@
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-setion-leftSide{
+    flex: 3;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.hero-section-fitness-div{
+    margin-top: 4rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 20px 13px;
+    border-radius: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero-section-fitness-div div{
+    position: absolute;
+    left: 8px;
+    width: 5.4rem;
+    height: 80%;
+    border-radius: 3rem;
+    z-index: 0;
+    background-color: var(--orange);
+}
+.hero-section-fitness-div span{
+    text-transform: uppercase;
+    color: white;
+    z-index: 10;
+}
+.hero-setion-leftSide>div:nth-child(3){
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+.hero-setion-leftSide>div:nth-child(4){
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+.hero-setion-leftSide>span:nth-child(5){
+    font-size: 1rem;
+    font-weight: 200;
+    color:white
+}
+.hero-section-leftSide-figures{
+    display: flex;
+    gap: 2rem;
+}
+.hero-section-leftSide-figures .figures{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+.hero-section-leftSide-figures .figures>span:nth-child(2){
+    color: var(--gray);
+    transform: none;
+}
+.hero-section-letSide-buttons{
+    display: flex;
+    gap:1rem;
+}
+.hero-section-letSide-buttons>button:nth-child(2){
+    background-color: transparent;
+    border:1px solid var(--orange);
+}
+.hero-setion-rightSide{
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+.hero-setion-rightSide button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    width: fit-content;
+    padding:1rem 1rem;
+    font-weight: 200;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.hero-section-rightSide-heart {
+    width: fit-content;
+    background-color: var(--darkGrey);
+    display: flex;
+    align-items: flex-start;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-section-rightSide-heart:hover{
+    transform: translateY(-5%);
+}
+.hero-section-rightSide-heart>:nth-child(2){
+    color: var(--gray);
+} 
+.hero-section-rightSide-heart img{
+    width: 2rem;
+}
+.hero-image{
+    width: 23rem;
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    z-index: 3;
+}
+.hero-image2{
+    width: 18rem;
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    z-index: 1;
+}
+.hero-section-rightSide-calories{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    background-color: var(--caloryCard);
+    position: absolute;
+    top: 31rem;
+    right: 30rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-section-rightSide-calories:hover{
+    transform: translateY(-5%);
+}
+.hero-section-rightSide-calories img{
+    width: 2rem;
+}
+.hero-section-rightSide-calories div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+@media only screen and (max-width: 1200px){
+    .hero-image{
+        width: 18rem;
+    }
+    .hero-image2{
+        top: 9rem;
+        width: 15rem;
+    }
+    .hero-section-rightSide-calories{
+        right: 27rem;
+    }
+    .hero-section-leftSide-figures .figures{
+        font-size: 0.75rem;
+    }
+    .hero-image2{
+        top: 9rem;
+        width: 12rem;
+    }
+    .hero-section-rightSide-calories{
+        right: 20rem;
+    }
+
+}
+@media only screen and (max-width: 1000px){
+    .hero-image{
+        width: 15rem;
+    }
+    .hero-setion-leftSide>span:nth-child(5){
+        font-size: 0.75rem;
+    }
+    .hero-section-leftSide-figures .figures{
+        font-size: 0.7rem;
+    }
+    .hero-section-rightSide-calories{
+        right: 18rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-setion-rightSide{
+        background-color: transparent;
+    }
+    .hero-setion-rightSide{
+        position: relative;
+    }
+    .hero-setion-rightSide button {
+        position: absolute;
+        top: 1rem;
+        right: 10rem;
+    }
+    .hero-section{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .hero-setion-leftSide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero-section-fitness-div{
+        padding: 1rem;
+        font-size:0.91rem;
+    }
+    .hero-setion-leftSide>div:nth-child(3),.hero-setion-leftSide>div:nth-child(4){
+        font-size: 2rem;
+    }
+    .hero-setion-leftSide>span:nth-child(5){
+        font-size: 1rem;
+    }
+    .hero-section-leftSide-figures .figures{
+        font-size: 1rem;
+    }
+    .hero-section-letSide-buttons button{
+       font-size: 1.5rem;
+    }
+    .hero-section-rightSide-heart{
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        left: 5rem;
+    }
+    .hero-image{
+        position: relative;  
+        left: 15rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .hero-image2{
+        position: absolute;
+        width: 14rem;
+        left: 11rem;
+        top: 1rem;
+    }
+    .hero-section-rightSide-calories{
+        position: absolute;
+        left: 5rem;
+        top: 5rem;
+        position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .hero-setion-rightSide button {
+        right: 4rem;
+    }
+    .hero-image{
+        width: 18rem;
+       left: 7rem;
+    }
+    .hero-image2{
+        top: 2rem;
+        width: 16rem;
+       left: 3rem;
+    }
+    .hero-section-rightSide-heart{
+        left: 1rem;
+    }
+    .hero-section-rightSide-calories{
+        left: 1rem;
+    }
+    .hero-setion-leftSide>span:nth-child(5){
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .hero-section-leftSide-figures .figures{
+        font-size: 0.8rem;
+        line-height: 20px;
+        text-align: center;
+    }
+
+  }
+
+  @media only screen and (max-width:500px){
+    .hero-section-letSide-buttons{
+        flex-direction: column;
+    }
+    .hero-image{
+        width: 15rem;
+    }
+    .hero-image2{
+        top: 2rem;
+        width: 14rem;
+        left: 3rem;
+    }
+    .hero-setion-rightSide button {
+        right: 1rem;
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width:360px){
+    .hero-image{
+        left: 3rem;
+    }
+    .hero-section-rightSide-heart{
+        top: -4rem;
+    }
+    .hero-image2{
+        top: 1rem;
+        width: 14rem;
+        
+        left: 0rem;
+    }
+    
+    }
+    
+
+  
+

@@ -1,0 +1,95 @@
+.programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    padding-bottom: 1rem;
+}
+.programs-head{
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.programs-head>span:nth-child(2){
+   
+    color: white;
+}
+.programs-cards{
+    display: flex;
+    gap: 1rem;
+}
+.programs-cards .program-map-div{
+    background-color: var(--caloryCard);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    color: white;
+    
+}
+.programs-cards .program-map-div img{
+    color: white;
+    height: 2rem;fill:white
+}
+.in{
+    cursor: pointer;
+}
+.programs-cards .program-map-div:hover{
+    background: var(--planCard);
+    cursor: pointer;
+}
+
+.programs-cards .program-map-div .join{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.programs-cards .program-map-div .join img{
+    width: 2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+        .programs{
+            padding: 2rem;
+        }
+        .programs-head{
+            font-size: 2rem;
+        }
+        .programs-cards .program-map-div .join{
+            gap: 1rem;
+        }
+        
+}
+@media only screen and (max-width: 775px){
+    .programs-head{
+        font-size: 1.5rem;
+    }
+    .programs-cards{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 615px){
+    .programs-head{
+        font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 455px){
+        .programs-head{
+            font-size: 0.55rem;
+            font-weight: 0;
+        }
+        .programs-head .stroke-text{
+            color: white;
+           
+            -webkit-text-stroke-color: transparent;
+
+        }
+
+    
+    }
+}
