@@ -62,6 +62,13 @@
     .testimonials-section{
         flex-direction: column;
     }
+    .testimonials-section-flex-rightSide img{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    
 
 }
 
@@ -84,5 +91,8 @@
     }
     .testimonials-section-flex-leftSide .p1 {
         font-size:1rem;
+    }
+    .testimonials-section-flex-rightSide .arrows{
+        left: 50%;
     }
 }

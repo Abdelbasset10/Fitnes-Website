@@ -64,8 +64,18 @@
         gap: 2rem;
     }
     .contact-section-rightSide form{
-       width: 100%;
-        background-color: var(--gray);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        background-color: transparent;
+    }
+    .contact-section-rightSide form input{
+        border-bottom: 1px solid var(--gray);
+        width: 100%;
+    }
+    .contact-section-rightSide form button{
+        width: 100%;
     }
     .contact-section-rightSide {
      width: 50%;

@@ -7,7 +7,7 @@ import './navbar.css'
 const Navbar = () => {
   const [bar,setBar]=useState(false)
   const OpenBar = ()=>{
-    setBar(true)
+    setBar(!bar)
   }
 
   const CloseBar = () =>{

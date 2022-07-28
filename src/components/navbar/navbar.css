@@ -20,6 +20,8 @@
 }
 .mobile-version{
     display: none;
+    position: absolute;
+    right: -3rem;
 }
 .mobile-version img{
     width: 30%;
