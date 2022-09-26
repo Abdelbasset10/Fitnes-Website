@@ -18,11 +18,11 @@ const Navbar = () => {
         <img src={logo} alt="" />
 
         <ul className='nav-links'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">plans</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#plans">plans</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
         </ul>
 
         <div className='mobile-version'>

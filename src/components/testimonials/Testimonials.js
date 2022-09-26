@@ -20,8 +20,6 @@ const Testimonials = () => {
     }
   return (
     <div className='testimonials-section' id='testimonials'>
-        
-        
             <div className='testimonials-section-flex-leftSide'>
                 <p className='p1' >TESTIMONIALS</p>
                 <span   className='stroke-text size' >WHAT THEY</span>
@@ -30,18 +28,13 @@ const Testimonials = () => {
                 <div className='flex'>
                     <span className='p2' style={{color:"var(--orange)"}} >{testData[index].name}</span> <span style={{color:"white"}} > -{testData[index].job}</span> 
                 </div>
-            </div>
-            
-            <div className='testimonials-section-flex-rightSide'>
-                
+            </div>     
+            <div className='testimonials-section-flex-rightSide'>    
                     <img src={testData[index].img} alt="" />
-                
-                
                 <div className='arrows' >
                     <img style={{cursor: "pointer",width: "2rem",height:"2rem"}} src={leftarrow} onClick={LeftHandle}  alt="" />
                     <img style={{cursor: "pointer",width: "2rem",height:"2rem"}}src={rightarrow} onClick={RightHandle}  alt="" />
                 </div>
-
             </div>
 
         
